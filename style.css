@@ -25,17 +25,14 @@ header, footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80px;
+  height: 100px;
   color: azure;
 }
 
 a {
-  position: sticky;
-  left: 30px;
-  bottom: 50px;
   text-decoration: none;
   color: azure;
-  background-color: #000;
+  margin: 30px;
 }
 
 a:hover {
@@ -54,20 +51,6 @@ a:hover {
 .fade-in {
   animation: 1s fadeIn;
   opacity: 1;
-}
-
-.back {
-  display: inline-block;
-  position: absolute;
-  top: 35px;
-  left:50px;
-  margin: 0;
-  padding: 0 3px 0 6px;
-}
-
-.emoji {
-  font-size: 26px;
-  padding: 0 0 0 3px;
 }
 
 .flex-container {
@@ -148,7 +131,6 @@ a:hover {
   animation: animatedgradient 14s ease alternate infinite;
   background-size: 300% 300%;
 }
-
 
 .text-gradient {
   background: rgb(0, 217, 255);
