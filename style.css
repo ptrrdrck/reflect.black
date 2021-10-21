@@ -11,8 +11,8 @@ html {
   width: 100%;
   display: flex;
   justify-content: center;
-  background: rgb(25,25,25);
-  background: linear-gradient(90deg, rgba(25,25,25,1) 0%, rgba(0,0,0,1) 88%, rgba(25,25,25,1) 100%);
+  background: rgb(20, 20, 20);
+  background: radial-gradient(circle, rgb(14, 14, 14) 0%, rgba(11,11,11,1) 62%);
 }
 
 body {
@@ -96,7 +96,7 @@ a:hover {
 }
 
 .words {
-  flex: 0 0 0;
+  flex: 1 0 0;
   min-width: 320px;
   align-self: center;
 }
@@ -141,13 +141,14 @@ a:hover {
   width: calc(100% + var(--borderWidth) * 2);
   /*background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);*/
   /*background: linear-gradient(60deg, #5073b8, #1098ad, #07b39b, #6fba82, #5073b8, #1098ad, #07b39b, #6fba82);*/
-  background: linear-gradient(60deg, #4b4b4b, #3b3b3b, #2b2b2b, #1b1b1b, #4b4b4b, #3b3b3b, #2b2b2b, #1b1b1b);
+  background: linear-gradient(60deg, #4b4b4b, #3b3b3b, #1b1b1b, #1b1b1b, #4b4b4b, #3b3b3b, #1b1b1b, #1b1b1b);
   border-radius: calc(2 * var(--borderWidth));
   z-index: -1;
-  -webkit-animation: animatedgradient 20s ease alternate infinite;
-  animation: animatedgradient 20s ease alternate infinite;
+  -webkit-animation: animatedgradient 14s ease alternate infinite;
+  animation: animatedgradient 14s ease alternate infinite;
   background-size: 300% 300%;
 }
+
 
 .text-gradient {
   background: rgb(0, 217, 255);
