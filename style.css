@@ -13,11 +13,11 @@ html {
   justify-content: center;
   background: rgb(20, 20, 20);
   background: radial-gradient(circle, rgb(14, 14, 14) 0%, rgba(11,11,11,1) 62%);
+  font-size: 17px;
 }
 
 body {
   font-family: 'Fira Code', monospace;
-  font-size: 17px;
   letter-spacing: 1px;
 }
 
@@ -64,8 +64,9 @@ a:hover {
 }
 
 .reflection {
+  flex: auto;
   position: relative;
-  width: 350px;
+  max-width: 350px;
   margin: 10px;
   font-size: 17px;
   display: flex;
@@ -79,8 +80,7 @@ a:hover {
 }
 
 .words {
-  flex: 1 0 0;
-  min-width: 320px;
+  flex: auto;
   align-self: center;
 }
 
@@ -122,8 +122,6 @@ a:hover {
   left: calc(-1 * var(--borderWidth));
   height: calc(100% + var(--borderWidth) * 2);
   width: calc(100% + var(--borderWidth) * 2);
-  /*background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);*/
-  /*background: linear-gradient(60deg, #5073b8, #1098ad, #07b39b, #6fba82, #5073b8, #1098ad, #07b39b, #6fba82);*/
   background: linear-gradient(60deg, #4b4b4b, #3b3b3b, #1b1b1b, #1b1b1b, #4b4b4b, #3b3b3b, #1b1b1b, #1b1b1b);
   border-radius: calc(2 * var(--borderWidth));
   z-index: -1;
@@ -137,6 +135,7 @@ a:hover {
   background: -webkit-linear-gradient(120deg,rgb(0, 217, 255) 0,#0084ff 100%);
   background: -moz-linear-gradient(120deg,rgb(0, 217, 255) 0,#0084ff 100%);
   background: linear-gradient(160deg,rgb(0, 217, 255) 0,#0084ff 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
